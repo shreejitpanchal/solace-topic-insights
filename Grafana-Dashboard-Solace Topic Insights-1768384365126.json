@@ -210,9 +210,9 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Solace Topic Metrics",
-  "uid": "solace-topic-metrics-v2",
-  "version": 7,
+  "title": "Solace Topic Insights",
+  "uid": "solace-topic-metrics-v1",
+  "version": 8,
   "weekStart": "",
   "id": null
 }
