@@ -21,6 +21,9 @@ export const config = {
     keepAliveIntervalMs: parseInt(process.env.SOLACE_KEEPALIVE_INTERVAL_MS || '3000', 10),
     keepAliveIntervalsLimit: parseInt(process.env.SOLACE_KEEPALIVE_LIMIT || '10', 10),
     subscribeTimeoutMs: parseInt(process.env.SOLACE_SUBSCRIBE_TIMEOUT_MS || '10000', 10),
+
+    // SSL/TLS settings for WSS connections
+    sslValidateCertificate: process.env.SOLACE_SSL_VALIDATE_CERTIFICATE !== 'false',
   },
 
   elasticsearch: {

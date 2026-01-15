@@ -53,6 +53,7 @@ class SolaceTopicTracker {
         keepAliveIntervalInMsecs: config.solace.keepAliveIntervalMs,
         keepAliveIntervalsLimit: config.solace.keepAliveIntervalsLimit,
         reapplySubscriptions: true,
+        sslValidateCertificate: config.solace.sslValidateCertificate,
       };
 
       this.session = solace.SolclientFactory.createSession(sessionProperties);
